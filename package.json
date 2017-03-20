@@ -1,0 +1,31 @@
+{
+  "name": "zandoc-react-loader",
+  "version": "1.0.0",
+  "description": "React loader for zandoc-loader",
+  "main": "lib/index.js",
+  "scripts": {},
+  "keywords": [
+    "webpack",
+    "loader",
+    "zanui",
+    "doc",
+    "React"
+  ],
+  "author": "Li Chen <lichen@youzan.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-generator": "^6.24.0",
+    "babel-template": "^6.23.0",
+    "babel-traverse": "^6.23.1",
+    "babel-types": "^6.23.0",
+    "babylon": "^6.16.1",
+    "highlight.js": "^9.10.0",
+    "loader-utils": "^1.1.0",
+    "lodash": "^4.17.4",
+    "postcss": "^5.2.16",
+    "precss": "^1.4.0",
+    "remark-html": "^6.0.0",
+    "unified": "^6.1.1"
+  }
+}
