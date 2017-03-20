@@ -1,6 +1,6 @@
 {
   "name": "zandoc-react-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React loader for zandoc-loader",
   "main": "lib/index.js",
   "scripts": {},
@@ -29,6 +29,7 @@
     "postcss": "^5.2.16",
     "precss": "^1.4.0",
     "remark-html": "^6.0.0",
-    "unified": "^6.1.1"
+    "unified": "^6.1.1",
+    "zandoc-loader-utils": "^1.0.0"
   }
 }
