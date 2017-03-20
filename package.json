@@ -1,6 +1,6 @@
 {
   "name": "zandoc-react-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React loader for zandoc-loader",
   "main": "lib/index.js",
   "scripts": {},
@@ -10,6 +10,9 @@
     "zanui",
     "doc",
     "React"
+  ],
+  "files": [
+    "sample"
   ],
   "author": "Li Chen <lichen@youzan.com>",
   "license": "MIT",
