@@ -25,15 +25,20 @@ Use as a webpack loader
 
 ### Options
 
-* `jsTemplate`: path to js template file, supports lodash's template syntax. 
+* `jsTemplate`: path to js template file, uses `babel-template`. 
+
+Note: `babel-generator` has trouble with jsx generation, it will escape
+all unicode sequences resulting in incorrect jsx code.
 
 Available properties in the template: 
 
-* `sections`: All sections in the file, `style`, `demo` and `markdown`. 
+* `SECTIONS`: All sections in the file, `style`, `demo` and `markdown`. 
 Styles are compiled to css with `precss`
 demos are code fragments that return a React node
 markdowns are compiled to html
 
-* `imports`: All imports from demos
+* `IMPORTS`: All imports from demos
+
+* `DEMO_DECLARATIONS`: Declarations for demos
 
 Take a look at `sample/template.js`.

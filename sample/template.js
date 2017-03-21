@@ -38,6 +38,12 @@ class DemoRenderer extends Component {
 
 module.exports = class ZentDocContainer extends Component {
   render() {
-    return SECTIONS;
+    return React.createElement(
+      'div',
+      {
+        className: 'zandoc-react-container'
+      },
+      SECTIONS
+    );
   }
 }
