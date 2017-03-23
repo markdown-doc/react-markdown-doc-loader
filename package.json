@@ -1,6 +1,6 @@
 {
   "name": "zandoc-react-loader",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "React loader for zandoc-loader",
   "main": "lib/index.js",
   "scripts": {},
@@ -24,16 +24,20 @@
     "babel-traverse": "^6.23.1",
     "babel-types": "^6.23.0",
     "babylon": "^6.16.1",
+    "hast-util-to-html": "^3.0.0",
     "highlight.js": "^9.10.0",
     "loader-utils": "^1.1.0",
     "lodash": "^4.17.4",
+    "mdast-util-to-hast": "^2.4.0",
     "mdast-util-to-string": "^1.0.2",
     "pinyin": "^2.8.2",
     "postcss": "^5.2.16",
     "precss": "^1.4.0",
-    "remark-html": "^6.0.0",
+    "rehype-parse": "^3.1.0",
     "unified": "^6.1.1",
     "unist-builder": "^1.0.2",
+    "unist-util-is": "^2.0.0",
+    "unist-util-visit": "^1.1.1",
     "zandoc-loader-utils": "^1.0.0"
   }
 }
