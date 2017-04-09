@@ -1,13 +1,13 @@
 {
-  "name": "zandoc-react-loader",
-  "version": "1.0.10",
-  "description": "React loader for zandoc-loader",
+  "name": "react-markdown-doc-loader",
+  "version": "1.0.0",
+  "description": "React backend for markdown-doc-loader",
   "main": "lib/index.js",
   "scripts": {},
   "keywords": [
     "webpack",
     "loader",
-    "zanui",
+    "markdown",
     "doc",
     "React"
   ],
@@ -38,6 +38,6 @@
     "unist-builder": "^1.0.2",
     "unist-util-is": "^2.0.0",
     "unist-util-visit": "^1.1.1",
-    "zandoc-loader-utils": "^1.0.0"
+    "markdown-doc-loader-utils": "^1.0.0"
   }
 }

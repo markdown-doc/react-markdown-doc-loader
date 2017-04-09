@@ -1,12 +1,15 @@
-## zandoc-react-loader
+## react-markdown-doc-loader
 
-A webpack loader to convert `zandoc-loader`'s output to React component.
+A webpack loader to convert `markdown-doc-loader`'s output to React component.
+
+`markdown-doc-loader` converts a markdown file to a list of sections. There're three
+types of section: markdown, style and demo.
 
 ### Usage
 
 Use as a webpack loader
 
-```
+```js
 {
 	module: {
 		rules: [
@@ -14,8 +17,18 @@ Use as a webpack loader
 			test: /\.md$/,
 			use: [
 				'babel-loader',
-				'zandoc-react-loader',
-				'zandoc-loader'
+				{
+					loader: require.resolve('react-markdown-doc-loader'),
+					options: {
+						jsTemplate: path.join(__dirname, './react-template.js'),
+						renderers: {
+							markdown: 'Markdown',
+							style: 'Style',
+							demo: 'Demo'
+						}
+					}
+				}
+				'markdown-doc-loader'
 			]
 			}
 		]
@@ -26,9 +39,7 @@ Use as a webpack loader
 ### Options
 
 * `jsTemplate`: path to js template file, uses `babel-template`. 
-
-Note: `babel-generator` has trouble with jsx generation, it will escape
-all unicode sequences resulting in incorrect jsx code.
+* `renderers`: a map of component names to different types of sections
 
 Available properties in the template: 
 

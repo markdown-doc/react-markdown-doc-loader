@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
-import 'zent/lib/index.css';
 IMPORTS
 
 DEMO_DECLARATIONS
 
 function RawHtmlRenderer(props) {
-  return <props.tag dangerouslySetInnerHTML={{ __html: props.html }}></props.tag>;
+  return <props.tag {...props.attributes} dangerouslySetInnerHTML={{ __html: props.html }}></props.tag>;
 }
 
-class DemoRenderer extends Component {
+function Markdown(props) {
+  return <RawHtmlRenderer tag="section" html={props.html} />;
+}
+
+function Style(props) {
+  return <RawHtmlRenderer tag="style" html={props.style} />;
+}
+
+class Demo extends Component {
   state = {
-    showCode: false
+    showCode: true
   };
 
   toggle = () => {
@@ -24,13 +31,29 @@ class DemoRenderer extends Component {
     const { title, src, demo } = this.props;
 
     return (
-      <div className="zent-doc-react-demo">
-        {demo}
-        <div className="zent-doc-react-demo--bottom">
-          <div className="zent-doc-react-demo--title">{title}</div>
-          <button onClick={this.toggle}>{showCode ? 'OFF' : 'ON'}</button>
+      <div className="zandoc-react-demo">
+        <div className="zandoc-react-demo__preview">
+          {demo}
         </div>
-        {showCode && <RawHtmlRenderer tag="div" html={src} />}
+        <div className="zandoc-react-demo__bottom" onClick={this.toggle}>
+          <i
+            className={`zenticon zenticon-right zandoc-react-demo__toggle ${showCode ? 'zandoc-react-demo__toggle-on' : 'zandoc-react-demo__toggle-off'}`}
+          />
+          <RawHtmlRenderer
+            tag="div"
+            attributes={{
+              className: 'zandoc-react-demo__title'
+            }}
+            html={title}
+          />
+        </div>
+        {showCode && <RawHtmlRenderer
+          tag="pre"
+          html={src}
+          attributes={{
+            className: 'zandoc-react-demo__code'
+          }}
+        />}
       </div>
     )
   }
@@ -41,7 +64,7 @@ module.exports = class ZentDocContainer extends Component {
     return React.createElement(
       'div',
       {
-        className: 'zandoc-react-container'
+        className: 'zandoc-react-container '
       },
       SECTIONS
     );
