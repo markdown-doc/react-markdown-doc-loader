@@ -18,7 +18,7 @@
   "author": "Li Chen <lichen@youzan.com>",
   "license": "MIT",
   "dependencies": {
-    "autoprefixer": "^6.7.7",
+    "autoprefixer": "7.1.x",
     "babel-generator": "^6.24.0",
     "babel-template": "^6.23.0",
     "babel-traverse": "^6.23.1",
