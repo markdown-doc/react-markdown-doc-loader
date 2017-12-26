@@ -1,6 +1,6 @@
 {
   "name": "react-markdown-doc-loader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React backend for markdown-doc-loader",
   "main": "lib/index.js",
   "scripts": {},
@@ -33,7 +33,7 @@
     "mdast-util-to-string": "^1.0.2",
     "postcss": "^5.2.16",
     "precss": "^1.4.0",
-    "prismjs": "^1.6.0",
+    "prismjs": "1.6.0",
     "rehype-parse": "^3.1.0",
     "transliteration": "^1.5.3",
     "unified": "^6.1.1",
