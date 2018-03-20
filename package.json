@@ -1,6 +1,6 @@
 {
   "name": "react-markdown-doc-loader",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "React backend for markdown-doc-loader",
   "main": "lib/index.js",
   "scripts": {},
