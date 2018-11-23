@@ -18,12 +18,12 @@
   "author": "Li Chen <lichen@youzan.com>",
   "license": "MIT",
   "dependencies": {
-    "autoprefixer": "7.1.x",
-    "babel-generator": "^6.24.0",
-    "babel-template": "^6.23.0",
-    "babel-traverse": "^6.23.1",
-    "babel-types": "^6.23.0",
-    "babylon": "^6.16.1",
+    "@babel/generator": "^7.1.6",
+    "@babel/parser": "^7.1.6",
+    "@babel/template": "^7.1.2",
+    "@babel/traverse": "^7.1.6",
+    "@babel/types": "^7.1.6",
+    "autoprefixer": "^9.3.1",
     "chalk": "^1.1.3",
     "hast-util-to-html": "^3.0.0",
     "loader-utils": "^1.1.0",
@@ -31,8 +31,8 @@
     "markdown-doc-loader-utils": "^1.0.0",
     "mdast-util-to-hast": "^2.4.0",
     "mdast-util-to-string": "^1.0.2",
-    "postcss": "6.0.x",
-    "precss": "2.0.x",
+    "postcss": "^7.0.6",
+    "precss": "^3.1.2",
     "prismjs": "1.8.4",
     "rehype-parse": "^3.1.0",
     "transliteration": "^1.5.3",
@@ -40,5 +40,6 @@
     "unist-builder": "^1.0.2",
     "unist-util-is": "^2.0.0",
     "unist-util-visit": "^1.1.1"
-  }
+  },
+  "devDependencies": {}
 }
