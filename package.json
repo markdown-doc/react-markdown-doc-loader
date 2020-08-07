@@ -33,7 +33,7 @@
     "mdast-util-to-string": "^1.0.2",
     "postcss": "^7.0.6",
     "precss": "^3.1.2",
-    "prismjs": "1.8.4",
+    "prismjs": "1.21.0",
     "rehype-parse": "^3.1.0",
     "transliteration": "^1.5.3",
     "unified": "^6.1.1",
